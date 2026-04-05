@@ -1,16 +1,17 @@
-/* Xbox One Controller Custom Overlay Skin */
-/* Neon blue + black theme */
+/* Xbox One Controller Overlay - Black & Red */
 
 .controller.custom {
-  background: url("https://i.imgur.com/7oN4R7L.png") no-repeat center center;
-  background-size: contain;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  border: 3px solid #8b0000;
+  border-radius: 40px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.25);
   width: 1000px;
   height: 600px;
   position: relative;
 }
 
 .custom.disconnected {
-  filter: grayscale(100%) opacity(0.5);
+  filter: grayscale(100%) opacity(0.55);
 }
 
 .custom .triggers {
@@ -23,40 +24,30 @@
 .custom .trigger {
   width: 140px;
   height: 60px;
-  background: rgba(0, 200, 255, 0.15);
-  border: 2px solid rgba(0, 200, 255, 0.8);
-  border-radius: 20px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #300 100%);
+  border: 2px solid #ff1a1a;
+  border-radius: 18px;
   position: absolute;
-  top: 20px;
-  box-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+  top: 18px;
+  box-shadow: 0 0 14px rgba(255, 0, 0, 0.4);
 }
 
-.custom .trigger.left {
-  left: 120px;
-}
-
-.custom .trigger.right {
-  right: 120px;
-}
+.custom .trigger.left { left: 120px; }
+.custom .trigger.right { right: 120px; }
 
 .custom .bumper {
   width: 120px;
-  height: 35px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(0, 200, 255, 0.7);
+  height: 34px;
+  background: #151515;
+  border: 2px solid #cc0000;
   border-radius: 14px;
   position: absolute;
-  top: 95px;
-  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+  top: 92px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.25);
 }
 
-.custom .bumper.left {
-  left: 130px;
-}
-
-.custom .bumper.right {
-  right: 130px;
-}
+.custom .bumper.left { left: 130px; }
+.custom .bumper.right { right: 130px; }
 
 .custom .sticks {
   position: absolute;
@@ -68,9 +59,9 @@
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background: radial-gradient(circle, #111 30%, #00c8ff 100%);
-  border: 3px solid #5ee7ff;
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.75);
+  background: radial-gradient(circle, #2a2a2a 0%, #0c0c0c 70%, #500 100%);
+  border: 3px solid #ff1a1a;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.4);
   position: absolute;
 }
 
@@ -108,38 +99,39 @@
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
-  color: white;
+  color: #fff;
   text-align: center;
   line-height: 52px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.25);
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(255,255,255,0.12);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
 }
 
 .custom .button.pressed {
   transform: scale(0.92);
-  filter: brightness(1.5);
+  filter: brightness(1.35);
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.6);
 }
 
 .custom .a {
-  background: #1db954;
+  background: #8b0000;
   bottom: 0;
   left: 64px;
 }
 
 .custom .b {
-  background: #ff3b30;
+  background: #b30000;
   top: 64px;
   right: 0;
 }
 
 .custom .x {
-  background: #0a84ff;
+  background: #660000;
   top: 64px;
   left: 0;
 }
 
 .custom .y {
-  background: #ffd60a;
+  background: #ff1a1a;
   top: 0;
   left: 64px;
 }
@@ -150,36 +142,29 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #5ee7ff;
-  color: #5ee7ff;
+  background: #111;
+  border: 2px solid #ff1a1a;
+  color: #ff4d4d;
   position: absolute;
   top: 180px;
   line-height: 42px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 200, 255, 0.6);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
 }
 
-.custom .select {
-  left: 420px;
-}
-
-.custom .meta {
-  left: 478px;
-}
-
-.custom .start {
-  left: 536px;
-}
+.custom .select { left: 420px; }
+.custom .meta { left: 478px; }
+.custom .start { left: 536px; }
 
 .custom .dpad .up,
 .custom .dpad .down,
 .custom .dpad .left,
-.custom .dpad .right {
+.custom .dpad .right,
+.custom .dpad .center {
   position: absolute;
-  background: rgba(0, 0, 0, 0.85);
-  border: 2px solid #5ee7ff;
-  box-shadow: 0 0 10px rgba(0, 200, 255, 0.6);
+  background: #111;
+  border: 2px solid #ff1a1a;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
 }
 
 .custom .dpad .up,
@@ -203,16 +188,8 @@
 .custom .dpad .right { right: 0; }
 
 .custom .dpad .center {
-  position: absolute;
   width: 42px;
   height: 42px;
   left: 39px;
   top: 39px;
-  background: rgba(0, 0, 0, 0.9);
-  border: 2px solid #5ee7ff;
-}
-
-.custom .abxy-labels {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
 }
