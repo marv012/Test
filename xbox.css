@@ -1,0 +1,218 @@
+/* Xbox One Controller Custom Overlay Skin */
+/* Neon blue + black theme */
+
+.controller.custom {
+  background: url("https://i.imgur.com/7oN4R7L.png") no-repeat center center;
+  background-size: contain;
+  width: 1000px;
+  height: 600px;
+  position: relative;
+}
+
+.custom.disconnected {
+  filter: grayscale(100%) opacity(0.5);
+}
+
+.custom .triggers {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+}
+
+.custom .trigger {
+  width: 140px;
+  height: 60px;
+  background: rgba(0, 200, 255, 0.15);
+  border: 2px solid rgba(0, 200, 255, 0.8);
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+}
+
+.custom .trigger.left {
+  left: 120px;
+}
+
+.custom .trigger.right {
+  right: 120px;
+}
+
+.custom .bumper {
+  width: 120px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(0, 200, 255, 0.7);
+  border-radius: 14px;
+  position: absolute;
+  top: 95px;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+.custom .bumper.left {
+  left: 130px;
+}
+
+.custom .bumper.right {
+  right: 130px;
+}
+
+.custom .sticks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.custom .stick {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #111 30%, #00c8ff 100%);
+  border: 3px solid #5ee7ff;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.75);
+  position: absolute;
+}
+
+.custom .stick.left {
+  left: 210px;
+  top: 250px;
+}
+
+.custom .stick.right {
+  right: 210px;
+  top: 250px;
+}
+
+.custom .dpad {
+  position: absolute;
+  left: 120px;
+  top: 250px;
+  width: 120px;
+  height: 120px;
+}
+
+.custom .face {
+  position: absolute;
+  right: 110px;
+  top: 220px;
+  width: 180px;
+  height: 180px;
+}
+
+.custom .button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 52px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.25);
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.custom .button.pressed {
+  transform: scale(0.92);
+  filter: brightness(1.5);
+}
+
+.custom .a {
+  background: #1db954;
+  bottom: 0;
+  left: 64px;
+}
+
+.custom .b {
+  background: #ff3b30;
+  top: 64px;
+  right: 0;
+}
+
+.custom .x {
+  background: #0a84ff;
+  top: 64px;
+  left: 0;
+}
+
+.custom .y {
+  background: #ffd60a;
+  top: 0;
+  left: 64px;
+}
+
+.custom .meta,
+.custom .start,
+.custom .select {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #5ee7ff;
+  color: #5ee7ff;
+  position: absolute;
+  top: 180px;
+  line-height: 42px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.6);
+}
+
+.custom .select {
+  left: 420px;
+}
+
+.custom .meta {
+  left: 478px;
+}
+
+.custom .start {
+  left: 536px;
+}
+
+.custom .dpad .up,
+.custom .dpad .down,
+.custom .dpad .left,
+.custom .dpad .right {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #5ee7ff;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.6);
+}
+
+.custom .dpad .up,
+.custom .dpad .down {
+  width: 42px;
+  height: 52px;
+  left: 39px;
+}
+
+.custom .dpad .up { top: 0; }
+.custom .dpad .down { bottom: 0; }
+
+.custom .dpad .left,
+.custom .dpad .right {
+  width: 52px;
+  height: 42px;
+  top: 39px;
+}
+
+.custom .dpad .left { left: 0; }
+.custom .dpad .right { right: 0; }
+
+.custom .dpad .center {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 39px;
+  top: 39px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #5ee7ff;
+}
+
+.custom .abxy-labels {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
